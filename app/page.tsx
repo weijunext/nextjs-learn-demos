@@ -1,6 +1,12 @@
-import Image from 'next/image'
+import Image from "next/image";
+import { getCurrentUser } from "@/lib/session";
+import Link from "next/link";
+import SignOut from "@/components/SignOut";
 
-export default function Home() {
+export default async function Home() {
+  const user = await getCurrentUser();
+  console.log(user);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -15,7 +21,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -39,6 +45,41 @@ export default function Home() {
         />
       </div>
 
+      <div>
+        <div className="flex">
+          {user?.image ? (
+            <>
+              {" "}
+              Current User:{" "}
+              <Image
+                className="relative rounded-full ml-3 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+                src={user.image}
+                alt="Next.js Logo"
+                width={36}
+                height={36}
+                priority
+              />
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+        {!user ? (
+          <div className="">
+            Next-Auth的demo请到
+            <Link
+              href="/login"
+              className="hover:text-brand underline underline-offset-4"
+            >
+              登录页
+            </Link>
+            体验
+          </div>
+        ) : (
+          <SignOut></SignOut>
+        )}
+      </div>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -47,7 +88,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
+            Docs{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -64,7 +105,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
+            Learn{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -81,7 +122,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
+            Templates{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -98,7 +139,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            Deploy{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -109,5 +150,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
