@@ -6,7 +6,7 @@ import { UserInfo } from "@/types/user";
 
 export default async function Home() {
   const user = await getCurrentUser() as UserInfo;
-  console.log(user);
+  console.log('user', user);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -48,7 +48,7 @@ export default async function Home() {
 
       <div>
         <div className="flex">
-          {user.avatar ? (
+          {user?.avatar ? (
             <>
               {" "}
               Current User:{" "}

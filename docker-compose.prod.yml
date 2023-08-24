@@ -1,18 +1,21 @@
 version: '3.1'
 services:
-  nextjs-learn-domes:
+  db:
     image: postgres
     volumes:
       - ./postgres:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
     environment:
       - POSTGRES_USER=myuser
       - POSTGRES_PASSWORD=mypassword
 
-  adminer:
-    image: adminer
-    restart: always
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    environment:
+      - PG_HOST=db
+      - NODE_ENV=production
     ports:
-      - 8080:8080
-
+      - 3001:3000
+    depends_on:
+      - db

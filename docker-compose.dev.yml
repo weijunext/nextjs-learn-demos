@@ -1,0 +1,31 @@
+version: '3.1'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  nextjs:
+    image: node:18 # 基于官方node镜像
+    working_dir: /app/app # 设置工作目录
+    volumes:
+      - .:/app/app # 把当前目录挂载到容器里 
+    ports:
+      - 3001:3000 # 对外暴露端口
+    command: bash -c "npx prisma generate && npm run dev" # 容器内启动命令
+
+    environment:
+      - PG_HOST=db # 设置数据库主机名为db    
+    depends_on:
+      - db
