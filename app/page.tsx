@@ -48,7 +48,7 @@ export default async function Home() {
 
       <div>
         <div className="flex">
-          {user.avatar ? (
+          {user?.avatar ? (
             <>
               {" "}
               Current User:{" "}
