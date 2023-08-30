@@ -1,8 +1,6 @@
 import Card from "@/components/home/card";
 import ComponentGrid from "@/components/home/component-grid";
 import { Github, Twitter } from "@/components/shared/icons";
-import TablerEyeFilled from "@/components/shared/icons/eye";
-import redis from "@/lib/redis";
 import { nFormatter } from "@/lib/utils";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
@@ -23,9 +21,6 @@ export default async function Home() {
   )
     .then((res) => res.json())
     .catch((e) => console.log(e));
-
-  await redis.incr("view");
-  const view: number = (await redis.get("view")) || 0;
 
   return (
     <>
@@ -70,13 +65,6 @@ export default async function Home() {
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
           </a>
-          <span className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800">
-            <TablerEyeFilled />
-            <p>
-              <span className="hidden sm:inline-block">Page Views</span>{" "}
-              <span className="font-semibold">{nFormatter(view)}</span>
-            </p>
-          </span>
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
