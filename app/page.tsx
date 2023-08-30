@@ -1,155 +1,128 @@
+import Card from "@/components/home/card";
+import ComponentGrid from "@/components/home/component-grid";
+import { Github, Twitter } from "@/components/shared/icons";
+import { nFormatter } from "@/lib/utils";
 import Image from "next/image";
-import { getCurrentUser } from "@/lib/session";
-import Link from "next/link";
-import SignOut from "@/components/SignOut";
-import { UserInfo } from "@/types/user";
+import Balancer from "react-wrap-balancer";
 
 export default async function Home() {
-  const user = await getCurrentUser() as UserInfo;
-  console.log(user);
+  const { stargazers_count: stars } = await fetch(
+    "https://api.github.com/repos/weijunext/nextjs-learn-demos",
+    {
+      ...(process.env.GITHUB_OAUTH_TOKEN && {
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+      }),
+      // data will revalidate every 24 hours
+      next: { revalidate: 86400 },
+    }
+  )
+    .then((res) => res.json())
+    .catch((e) => console.log(e));
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <>
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+        <a
+          href="https://twitter.com/weijunext"
+          target="_blank"
+          rel="noreferrer"
+          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+        >
+          <Twitter className="h-5 w-5 text-[#1d9bf0]" />
+          <p className="text-sm font-semibold text-[#1d9bf0]">Follow Me</p>
+        </a>
+        <h1
+          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl  opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+        >
+          <Balancer>Next.js Learn Demos</Balancer>
+        </h1>
+        <p
+          className="mt-6 animate-fade-up text-center text-gray-500  opacity-0 md:text-xl"
+          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+        >
+          <Balancer>
+            Next.js Learn Demos is an open-source repository that provides
+            branch-by-branch explanations of Next.js ecosystem technologies.
+          </Balancer>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        <div
+          className="mx-auto mt-6 flex animate-fade-up items-center justify-center opacity-0 space-x-5"
+          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
+        >
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            href="https://github.com/steven-tey/precedent"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            <Github />
+            <p>
+              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
+              <span className="font-semibold">{nFormatter(stars)}</span>
+            </p>
           </a>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+        {features.map(({ title, description, demo }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={
+              title === "Beautiful, reusable components" ? (
+                <ComponentGrid />
+              ) : (
+                demo
+              )
+            }
+          />
+        ))}
       </div>
-
-      <div>
-        <div className="flex">
-          {user?.avatar ? (
-            <>
-              {" "}
-              Current User:{" "}
-              <Image
-                className="relative rounded-full ml-3 dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-                src={user.avatar}
-                alt="Next.js Logo"
-                width={36}
-                height={36}
-                priority
-              />
-            </>
-          ) : (
-            <></>
-          )}
-        </div>
-        {!user ? (
-          <div className="">
-            Next-Auth的demo请到
-            <Link
-              href="/login"
-              className="hover:text-brand underline underline-offset-4"
-            >
-              登录页
-            </Link>
-            体验
-          </div>
-        ) : (
-          <SignOut></SignOut>
-        )}
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
+
+const features = [
+  {
+    title: "Next.js + TailWindCSS",
+    description:
+      "This repo base on Next.js and TailWindCSS. Read my blogs on [J实验室](https://weijunext.com/tag/NextJS/)",
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/next.svg" width={50} height={50} />
+        <Image alt="logo" src="/tailwindcss.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
+    title: "Built-in Auth + Database",
+    description: `Use NextJS+Next-Auth+Postgres+Prisma to implement the login module.
+      The code is on [Auth branch](https://github.com/weijunext/nextjs-learn-demos/tree/NextAuth-Prisma).
+      The blog is on [中文讲解](https://weijunext.com/article/061d8cd9-fcf3-4d9e-bd33-e257bc4f9989).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/next.svg" width={50} height={50} />
+        <Image alt="logo" src="/postgresql.svg" width={50} height={50} />
+        <Image alt="logo" src="/prisma.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
+    title: "Docker compose",
+    description: `Explore the usage of Docker and Docker Compose.
+      The code is on [Docker branch](https://github.com/weijunext/nextjs-learn-demos/tree/docker).
+      The blog is on [中文讲解](https://weijunext.com/article/b33a5545-fd26-47a6-8641-3c7467fb3910).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="Docker logo" src="/docker.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+];
