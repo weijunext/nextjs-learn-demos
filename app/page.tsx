@@ -2,6 +2,7 @@ import Card from "@/components/home/card";
 import ComponentGrid from "@/components/home/component-grid";
 import { Github, Twitter } from "@/components/shared/icons";
 import TablerEyeFilled from "@/components/shared/icons/eye";
+import LogoSVG from "@/components/shared/icons/logo";
 import redis from "@/lib/redis";
 import { nFormatter } from "@/lib/utils";
 import Image from "next/image";
@@ -30,15 +31,29 @@ export default async function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <a
-          href="https://twitter.com/weijunext"
-          target="_blank"
-          rel="noreferrer"
-          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+        <div
+          className="mx-auto mt-6 flex animate-fade-up items-center justify-center opacity-0 space-x-5"
+          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
-          <Twitter className="h-5 w-5 text-[#1d9bf0]" />
-          <p className="text-sm font-semibold text-[#1d9bf0]">Follow Me</p>
-        </a>
+          <a
+            href="https://twitter.com/weijunext/"
+            target="_blank"
+            rel="noreferrer"
+            className="mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          >
+            <Twitter className="h-5 w-5 text-[#1d9bf0]" />
+            <p className="text-sm font-semibold text-[#1d9bf0]">Follow Me</p>
+          </a>
+          <a
+            href="https://weijunext.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          >
+            <LogoSVG className="h-5 w-5 text-[#1d9bf0]" />
+            <p className="text-sm font-semibold text-[#1d9bf0]">My Blog</p>
+          </a>
+        </div>
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl  opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
