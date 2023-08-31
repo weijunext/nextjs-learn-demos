@@ -2,7 +2,8 @@
 
 NextJS项目demo汇总，每个demo开一个分支  
 
-我的博客：[weijunext.com](https://weijunext.com)
+我的博客：[J实验室](https://weijunext.com)  
+本仓库示例站：[nextjs.weijunext.com](https://nextjs.weijunext.com)  
 
 ## 阅读代码请配合对应文章食用
 
