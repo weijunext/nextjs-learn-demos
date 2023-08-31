@@ -8,13 +8,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Next.js Learn Demos",
   description: "Next.js Learn Demos by Weijunext",
+  author: "weijunext",
   twitter: {
     card: "summary_large_image",
-    title: "Author - weijunext",
+    title: "Next.js Learn Demos",
     description: "Next.js Learn Demos by Weijunext",
     creator: "@weijunext",
   },
-  metadataBase: new URL("https://weijunext.com"),
+  metadataBase: new URL("https://nextjs.weijunext.com"),
   themeColor: "#FFF",
 };
 
