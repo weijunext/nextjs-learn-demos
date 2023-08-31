@@ -137,4 +137,16 @@ const features = [
       </div>
     ),
   },
+  {
+    title: "Upstash Redis",
+    description: `Use Upstash as your Redis server.
+      The code is on [Upstash branch](https://github.com/weijunext/nextjs-learn-demos/tree/Upstash).
+      The blog is on [中文讲解](https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="Docker logo" src="/upstash.svg" width={50} height={50} />
+      </div>
+    ),
+  },
 ];
