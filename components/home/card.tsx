@@ -15,7 +15,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
+      className={`relative col-span-1 h-[25rem] overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
         large ? "md:col-span-2" : ""
       }`}
     >
