@@ -198,8 +198,10 @@ const features = [
 const posts = [
   {
     title: "React Hook: useReducer",
-    description:
-      "Basic usage to advanced techniques of useReducer. 👉 [view article](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098)",
+    description: `Basic usage to advanced techniques of useReducer. 
+      👉 [view article](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098)
+      👉 [view code](https://github.com/weijunext/nextjs-learn-demos/tree/useReducer-useContext).
+      `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="logo" src="/react.svg" width={50} height={50} />
