@@ -1,5 +1,6 @@
 "use client";
 
+import { ThemedButton } from "@/components/ThemedButton";
 import useScroll from "@/lib/hooks/use-scroll";
 import { UserInfo } from "@/types/user";
 import Image from "next/image";
@@ -32,7 +33,8 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
             ></Image>
             <p>NextJS Learn Demos</p>
           </Link>
-          <div>
+          <div className="flex items-center gap-4">
+            <ThemedButton></ThemedButton>
             {user ? (
               <UserDropdown user={user} />
             ) : (
