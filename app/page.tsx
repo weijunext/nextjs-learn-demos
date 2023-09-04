@@ -94,8 +94,37 @@ export default async function Home() {
           </span>
         </div>
       </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <h3
+        className="mt-10 mb-2 animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+        style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+      >
+        <Balancer>Stack</Balancer>
+      </h3>
+      <div className="grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={
+              title === "Beautiful, reusable components" ? (
+                <ComponentGrid />
+              ) : (
+                demo
+              )
+            }
+          />
+        ))}
+      </div>
+
+      <h3
+        className="mt-10 mb-2 animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+        style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+      >
+        <Balancer>Other Hot Posts</Balancer>
+      </h3>
+      <div className="grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+        {posts.map(({ title, description, demo }) => (
           <Card
             key={title}
             title={title}
@@ -127,8 +156,8 @@ const features = [
     ),
   },
   {
-    title: "Built-in Auth + Database",
-    description: `Use NextJS+Next-Auth+Postgres+Prisma to implement the login module.
+    title: "Auth + Database",
+    description: `Implement login module with Next.js, Next-Auth, Postgres, and Prisma.
       The code is on [Auth branch](https://github.com/weijunext/nextjs-learn-demos/tree/NextAuth-Prisma).
       The blog is on [中文讲解](https://weijunext.com/article/061d8cd9-fcf3-4d9e-bd33-e257bc4f9989).
       `,
@@ -161,6 +190,49 @@ const features = [
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Docker logo" src="/upstash.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+];
+
+const posts = [
+  {
+    title: "React Hook: useReducer",
+    description:
+      "Basic usage to advanced techniques of useReducer. 👉 [view article](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098)",
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/react.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
+    title: "NextJS Page Router: rendering",
+    description:
+      "Explaining CSR, SSR, SSG, and ISR in Next.js. 👉 [view article](https://weijunext.com/article/fa1588d6-c068-40ec-a587-4572bd349b25)",
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/next.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
+    title: "NextJS APP Router: rendering",
+    description:
+      "NextJS v13 server-side and client-side components best practices. 👉 [view article](https://weijunext.com/article/9e02de2e-c76c-4b82-998a-9e7066450c42)",
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/next.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
+    title: "Google Auth 2.0",
+    description:
+      "Analysis and implementation of Google OAuth2.0 login. 👉 [view article](https://weijunext.com/article/485132d1-31bd-4cb5-9fbc-576fb64d5ae9)",
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/google.svg" width={50} height={50} />
       </div>
     ),
   },
