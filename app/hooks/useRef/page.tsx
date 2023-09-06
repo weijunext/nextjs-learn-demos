@@ -53,7 +53,7 @@ export default function UseRefDemo() {
         <MovingBox />
       </div>
       <div className="relative overflow-hidden">
-        <div>Demo 7: useRef with addEventListener</div>
+        <div>Demo 7: useRef with addEventListener resize</div>
         <WindowSize />
       </div>
     </div>
