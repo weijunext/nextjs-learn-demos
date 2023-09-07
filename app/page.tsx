@@ -85,13 +85,13 @@ export default async function Home() {
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
           </a>
-          <span className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800">
+          <div className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800">
             <TablerEyeFilled />
             <p>
               <span className="hidden sm:inline-block">Page Views</span>{" "}
               <span className="font-semibold">{nFormatter(view)}</span>
             </p>
-          </span>
+          </div>
         </div>
       </div>
       <h3
