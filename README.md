@@ -17,4 +17,5 @@ NextJS项目demo汇总，每个demo开一个分支
 | Upstash | 用 Upstash 作为你的 Redis 服务器 | https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b  |
 | useReducer-useContext | 结合 useReducer 和 useContext 创建主题切换系统 | https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098 |
 | useRef | useRef的多维用途 | https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab |
+| useEffect | useEffect使用细节知多少？ | https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651 |
 |        |  拓展知识：讲清楚 Next.js 里的 CSR, SSR, SSG, 和 ISR  | https://weijunext.com/article/fa1588d6-c068-40ec-a587-4572bd349b25 |
