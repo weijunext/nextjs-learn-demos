@@ -12,7 +12,7 @@ export default function UseRefDemo() {
       >
         <Balancer>
           <p>
-            These demos source code of this page is on my{" "}
+            This demo source code of this page is on my{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useEffect"
               className="hover:text-brand underline underline-offset-4"
@@ -37,7 +37,7 @@ export default function UseRefDemo() {
       <div className="w-full max-w-screen-xl px-5 xl:px-0 grid animate-fade-up grid-cols-1 gap-y-10 gap-5 md:grid-cols-3">
         <div className="relative overflow-hidden">
           <div>
-            Demo : Counter 👉
+            Demo: Counter 👉
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/blob/useEffect/app/hooks/useEffect/demo1.tsx"
               className="hover:text-brand underline underline-offset-4"
