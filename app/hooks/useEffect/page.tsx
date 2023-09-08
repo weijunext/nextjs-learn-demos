@@ -3,7 +3,7 @@ import Counter from "@/app/hooks/useEffect/demo1";
 import Link from "next/link";
 import { Balancer } from "react-wrap-balancer";
 
-export default function UseRefDemo() {
+export default function Demo() {
   return (
     <>
       <div
