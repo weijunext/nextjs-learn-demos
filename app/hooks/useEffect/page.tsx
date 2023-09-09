@@ -3,7 +3,7 @@ import Counter from "@/app/hooks/useEffect/demo1";
 import Link from "next/link";
 import { Balancer } from "react-wrap-balancer";
 
-export default function UseRefDemo() {
+export default function Demo() {
   return (
     <>
       <div
@@ -12,7 +12,7 @@ export default function UseRefDemo() {
       >
         <Balancer>
           <p>
-            These demos source code of this page is on my{" "}
+            Source code of this page is on my{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useEffect"
               className="hover:text-brand underline underline-offset-4"
@@ -22,7 +22,7 @@ export default function UseRefDemo() {
             </Link>
           </p>
           <p>
-            and I have also written
+            and I have also written{" "}
             <Link
               href="https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651"
               className="hover:text-brand underline underline-offset-4"
