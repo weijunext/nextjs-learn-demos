@@ -24,7 +24,7 @@ export default function UseRefDemo() {
       >
         <Balancer>
           <p>
-            These demos source code of this page is on my{" "}
+            Source code of this page is on my{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useRef"
               className="hover:text-brand underline underline-offset-4"
