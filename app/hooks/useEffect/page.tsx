@@ -12,7 +12,7 @@ export default function Demo() {
       >
         <Balancer>
           <p>
-            This demo source code of this page is on my{" "}
+            Source code of this page is on my{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useEffect"
               className="hover:text-brand underline underline-offset-4"
