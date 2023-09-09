@@ -13,7 +13,7 @@ export default function Demo() {
       >
         <Balancer>
           <p>
-            These demos source code of this page is on my{" "}
+            Source code of this page is on my{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useLayoutEffect"
               className="hover:text-brand underline underline-offset-4"
