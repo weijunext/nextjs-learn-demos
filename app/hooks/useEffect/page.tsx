@@ -22,7 +22,7 @@ export default function Demo() {
             </Link>
           </p>
           <p>
-            and I have also written
+            and I have also written{" "}
             <Link
               href="https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651"
               className="hover:text-brand underline underline-offset-4"
