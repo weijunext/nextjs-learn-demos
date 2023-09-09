@@ -23,9 +23,9 @@ export default function Demo() {
             </Link>
           </p>
           <p>
-            and I have also written {/* TODO: 修改 */}
+            and I have also written{" "}
             <Link
-              href="https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651"
+              href="https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
