@@ -27,7 +27,7 @@ export default function Demo() {
           <p>
             and I have also written{" "}
             <Link
-              href="https://weijunext.com/"
+              href="https://weijunext.com/article/75704b53-4f6d-45db-a73b-f0cd6ce90ce9"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
