@@ -7,13 +7,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Next.js Learn Demos",
-  description: "Next.js Learn Demos by Weijunext",
+  title: "Next.js Demos",
+  description: "Next.js Demos by Weijunext",
   author: "weijunext",
   twitter: {
     card: "summary_large_image",
-    title: "Next.js Learn Demos",
-    description: "Next.js Learn Demos by Weijunext",
+    title: "Next.js Demos",
+    description: "Next.js Demos by Weijunext",
     creator: "@weijunext",
   },
   metadataBase: new URL("https://nextjs.weijunext.com"),

@@ -26,12 +26,12 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.svg"
-              alt="NextJS Learn Demos Logo"
+              alt="NextJS Demos Logo"
               width="30"
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>NextJS Learn Demos</p>
+            <p>NextJS Demos</p>
           </Link>
           <div className="flex items-center gap-4">
             <ThemedButton></ThemedButton>

@@ -58,7 +58,7 @@ export default async function Home() {
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl  opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          <Balancer>Next.js Learn Demos</Balancer>
+          <Balancer>Next.js Demos</Balancer>
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500  opacity-0 md:text-xl"

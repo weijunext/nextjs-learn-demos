@@ -22,7 +22,7 @@ const DemoModal = ({
           <a href="https://nextjs.weijunext.com">
             <Image
               src="/logo.svg"
-              alt="NextJS Learn Demos Logo"
+              alt="NextJS Demos Logo"
               className="h-10 w-10 rounded-full"
               width={20}
               height={20}
