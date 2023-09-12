@@ -1,3 +1,4 @@
+"use client";
 import React, { memo, useMemo, useState } from "react";
 
 type User = {
