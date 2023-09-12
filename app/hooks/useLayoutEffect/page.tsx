@@ -4,6 +4,20 @@ import HoverTooltip from "@/app/hooks/useLayoutEffect/demo2";
 import Link from "next/link";
 import { Balancer } from "react-wrap-balancer";
 
+export const metadata = {
+  title: "React Hooks Demos",
+  description: "React Hooks Demos by Weijunext",
+  author: "weijunext",
+  twitter: {
+    card: "summary_large_image",
+    title: "React Hooks Demos",
+    description: "React Hooks Demos by Weijunext",
+    creator: "@weijunext",
+  },
+  metadataBase: new URL("https://nextjs.weijunext.com"),
+  themeColor: "#FFF",
+};
+
 export default function Demo() {
   return (
     <>
