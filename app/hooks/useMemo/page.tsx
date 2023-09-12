@@ -1,4 +1,3 @@
-"use client";
 import Comparison1 from "@/app/hooks/useMemo/demo1";
 import Comparison2 from "@/app/hooks/useMemo/demo2";
 import Comparison3 from "@/app/hooks/useMemo/demo3";

@@ -1,4 +1,3 @@
-"use client";
 import BoxComparison from "@/app/hooks/useLayoutEffect/demo1";
 import HoverTooltip from "@/app/hooks/useLayoutEffect/demo2";
 import Link from "next/link";
