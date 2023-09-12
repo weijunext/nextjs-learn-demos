@@ -146,8 +146,8 @@ export default async function Home() {
 const features = [
   {
     title: "Next.js + TailWindCSS",
-    description:
-      "This repo base on Next.js and TailWindCSS. Read my blogs on [J实验室](https://weijunext.com/tag/NextJS/)",
+    description: `This repo base on Next.js and TailWindCSS.
+    👉 [Read my blog posts — J实验室](https://weijunext.com/tag/NextJS/)`,
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="logo" src="/next.svg" width={50} height={50} />
@@ -158,8 +158,8 @@ const features = [
   {
     title: "Auth + Database",
     description: `Implement login module with Next.js, Next-Auth, Postgres, and Prisma.
-      The code is on [Auth branch](https://github.com/weijunext/nextjs-learn-demos/tree/NextAuth-Prisma).
-      The blog is on [中文讲解](https://weijunext.com/article/061d8cd9-fcf3-4d9e-bd33-e257bc4f9989).
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/NextAuth-Prisma)
+    👉 [Read the blog post](https://weijunext.com/article/061d8cd9-fcf3-4d9e-bd33-e257bc4f9989)
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
@@ -172,8 +172,8 @@ const features = [
   {
     title: "Docker compose",
     description: `Explore the usage of Docker and Docker Compose.
-      The code is on [Docker branch](https://github.com/weijunext/nextjs-learn-demos/tree/docker).
-      The blog is on [中文讲解](https://weijunext.com/article/b33a5545-fd26-47a6-8641-3c7467fb3910).
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/docker).
+    👉 [Read the blog post](https://weijunext.com/article/b33a5545-fd26-47a6-8641-3c7467fb3910).
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
@@ -184,8 +184,8 @@ const features = [
   {
     title: "Upstash Redis",
     description: `Use Upstash as your Redis server.
-      The code is on [Upstash branch](https://github.com/weijunext/nextjs-learn-demos/tree/Upstash).
-      The blog is on [中文讲解](https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b).
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/Upstash).
+      👉 [Read the blog post](https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b).
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
@@ -199,8 +199,8 @@ const posts = [
   {
     title: "React Hook: useReducer",
     description: `Basic usage to advanced techniques of useReducer. 
-      👉 [view article](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098)
-      👉 [view code](https://github.com/weijunext/nextjs-learn-demos/tree/useReducer-useContext).
+    👉 [Read the blog post](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098)
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/useReducer-useContext).
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
@@ -210,8 +210,8 @@ const posts = [
   },
   {
     title: "NextJS Page Router: rendering",
-    description:
-      "Explaining CSR, SSR, SSG, and ISR in Next.js. 👉 [view article](https://weijunext.com/article/fa1588d6-c068-40ec-a587-4572bd349b25)",
+    description: `Explaining CSR, SSR, SSG, and ISR in Next.js.
+      👉 [Read the blog post](https://weijunext.com/article/fa1588d6-c068-40ec-a587-4572bd349b25)`,
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="logo" src="/next.svg" width={50} height={50} />
@@ -220,8 +220,8 @@ const posts = [
   },
   {
     title: "NextJS APP Router: rendering",
-    description:
-      "NextJS v13 server-side and client-side components best practices. 👉 [view article](https://weijunext.com/article/9e02de2e-c76c-4b82-998a-9e7066450c42)",
+    description: `NextJS v13 server-side and client-side components best practices.
+      👉 [Read the blog post](https://weijunext.com/article/9e02de2e-c76c-4b82-998a-9e7066450c42)`,
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="logo" src="/next.svg" width={50} height={50} />
@@ -229,9 +229,9 @@ const posts = [
     ),
   },
   {
-    title: "Google Auth 2.0",
-    description:
-      "Analysis and implementation of Google OAuth2.0 login. 👉 [view article](https://weijunext.com/article/485132d1-31bd-4cb5-9fbc-576fb64d5ae9)",
+    title: "Google Auth2.0",
+    description: `Develop Google OAuth 2.0 login.
+      👉 [Read the blog post](https://weijunext.com/article/485132d1-31bd-4cb5-9fbc-576fb64d5ae9)`,
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="logo" src="/google.svg" width={50} height={50} />
