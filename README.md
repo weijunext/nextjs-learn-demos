@@ -18,11 +18,15 @@ NextJS项目demo汇总，每个demo开一个分支
 |        |  拓展知识：讲清楚 Next.js 里的 CSR, SSR, SSG, 和 ISR  | https://weijunext.com/article/fa1588d6-c068-40ec-a587-4572bd349b25 |
 
 ### 精读 React Hooks
-|  分支   |  简介   | 文章链接  |
-|  ----  |  ----   | ----  |
-| useReducer-useContext | 结合 useReducer 和 useContext 创建主题切换系统 | https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098 |
-| useRef | useRef的多维用途 | https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab |
-| useEffect | useEffect使用细节知多少？ | https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651 |
-| useLayoutEffect | useLayoutEffect解决了什么问题？ | https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497 |
-| useMemo | 用useMemo来减少性能开销 | https://weijunext.com/article/75704b53-4f6d-45db-a73b-f0cd6ce90ce9 |
-| useDeferredValue | 使用useDeferredValue延迟状态更新 | https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3 |
+|  序号   |  Hook |  代码分支     | 文章链接  |
+|  ----  | ----  |  ----   | ----  |
+|  1 | useState | - | [👉 useState 的几个基础用法和进阶技巧](https://weijunext.com/article/36abddc1-a8cb-4618-b6eb-e536c4879535) |
+|  2-3 | useReducer、useContext | useReducer-useContext | [👉 全面掌握useReducer](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098) <br> [👉 useContext从基础应用到性能优化](https://weijunext.com/article/99d401ae-7428-405d-8af5-5c23c582dec8) |
+|  4 | useRef | useRef | [👉 useRef的多维用途](https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab) |
+|  5 | useEffect | useEffect | [👉 useEffect使用细节知多少](https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651) |
+|  6 | useLayoutEffect | useLayoutEffect | [👉 useLayoutEffect解决了什么问题](https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497) |
+|  7 | useMemo | useMemo | [👉 用useMemo来减少性能开销](https://weijunext.com/article/75704b53-4f6d-45db-a73b-f0cd6ce90ce9) |
+|  8 | useCallback | - | [👉 我们为什么需要useCallback](https://weijunext.com/article/0db6ef00-d058-4204-8502-0990d06d0a4b) |
+|  9 | useTransition | - | [👉 使用useTransition进行非阻塞渲染](https://weijunext.com/article/5458862c-76aa-436e-adc5-269dc82228df) |
+|  10 | useDeferredValue | useDeferredValue | [👉 使用useDeferredValue延迟状态更新](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3) |
+
