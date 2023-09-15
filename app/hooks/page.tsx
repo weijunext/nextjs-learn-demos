@@ -109,4 +109,8 @@ const features = [
     title: "useCallback",
     description: `👉 [Read the blog post](https://weijunext.com/article/0db6ef00-d058-4204-8502-0990d06d0a4b/)`,
   },
+  {
+    title: "useTransition",
+    description: `👉 [Read the blog post](https://weijunext.com/article/5458862c-76aa-436e-adc5-269dc82228df/)`,
+  },
 ];
