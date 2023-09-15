@@ -38,7 +38,7 @@ export default function Demo() {
           <p>
             👉{" "}
             <Link
-              href="https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497"
+              href="https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >

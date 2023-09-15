@@ -25,4 +25,4 @@ NextJS项目demo汇总，每个demo开一个分支
 | useEffect | useEffect使用细节知多少？ | https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651 |
 | useLayoutEffect | useLayoutEffect解决了什么问题？ | https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497 |
 | useMemo | 用useMemo来减少性能开销 | https://weijunext.com/article/75704b53-4f6d-45db-a73b-f0cd6ce90ce9 |
-
+| useDeferredValue | 使用useDeferredValue延迟状态更新 | https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3 |

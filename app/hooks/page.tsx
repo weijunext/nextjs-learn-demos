@@ -113,4 +113,9 @@ const features = [
     title: "useTransition",
     description: `👉 [Read the blog post](https://weijunext.com/article/5458862c-76aa-436e-adc5-269dc82228df/)`,
   },
+  {
+    title: "useDeferredValue",
+    description: `👉 [Read the blog post](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3/)
+    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useDeferredValue/)`,
+  },
 ];
