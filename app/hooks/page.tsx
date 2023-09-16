@@ -118,4 +118,8 @@ const features = [
     description: `👉 [Read the blog post](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3/)
     👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useDeferredValue/)`,
   },
+  {
+    title: "useInsertionEffect",
+    description: `👉 [Read the blog post](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644/)`,
+  },
 ];
