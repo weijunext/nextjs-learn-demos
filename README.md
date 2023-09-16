@@ -29,4 +29,4 @@ NextJS项目demo汇总，每个demo开一个分支
 |  8 | useCallback | - | [👉 我们为什么需要useCallback](https://weijunext.com/article/0db6ef00-d058-4204-8502-0990d06d0a4b) |
 |  9 | useTransition | - | [👉 使用useTransition进行非阻塞渲染](https://weijunext.com/article/5458862c-76aa-436e-adc5-269dc82228df) |
 |  10 | useDeferredValue | useDeferredValue | [👉 使用useDeferredValue延迟状态更新](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3) |
-
+|  11 | useInsertionEffect | - | [👉 useInsertionEffect——CSS-in-JS样式注入新方式](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644) |
