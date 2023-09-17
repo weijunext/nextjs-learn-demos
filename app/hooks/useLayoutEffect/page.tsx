@@ -26,25 +26,24 @@ export default function Demo() {
       >
         <Balancer>
           <p>
-            Source code of this page is on my{" "}
+            👉{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useLayoutEffect"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              GitHub
+              [Visit the source code]
             </Link>
           </p>
           <p>
-            and I have also written{" "}
+            👉{" "}
             <Link
               href="https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              a blog post
-            </Link>{" "}
-            sharing knowledge about useLayoutEffect.
+              [Read the blog post]
+            </Link>
           </p>
         </Balancer>
       </div>
