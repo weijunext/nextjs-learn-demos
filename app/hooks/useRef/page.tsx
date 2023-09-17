@@ -24,25 +24,24 @@ export default function UseRefDemo() {
       >
         <Balancer>
           <p>
-            Source code of this page is on my{" "}
+            👉{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useRef"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              GitHub
+              [Visit the source code]
             </Link>
           </p>
           <p>
-            and I have also written{" "}
+            👉{" "}
             <Link
               href="https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              a blog post
-            </Link>{" "}
-            sharing knowledge about useRef.
+              [Read the blog post]
+            </Link>
           </p>
         </Balancer>
       </p>
