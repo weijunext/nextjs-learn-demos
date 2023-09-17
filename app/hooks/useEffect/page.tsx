@@ -12,25 +12,24 @@ export default function Demo() {
       >
         <Balancer>
           <p>
-            Source code of this page is on my{" "}
+            👉{" "}
             <Link
               href="https://github.com/weijunext/nextjs-learn-demos/tree/useEffect"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              GitHub
+              [Visit the source code]
             </Link>
           </p>
           <p>
-            and I have also written{" "}
+            👉{" "}
             <Link
               href="https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651"
               className="hover:text-brand underline underline-offset-4"
               target="_blank"
             >
-              a blog post
-            </Link>{" "}
-            sharing knowledge about useEffect.
+              [Read the blog post]
+            </Link>
           </p>
         </Balancer>
       </div>
