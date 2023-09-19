@@ -31,4 +31,4 @@ NextJS项目demo汇总，每个demo开一个分支
 |  10 | useDeferredValue | useDeferredValue | [👉 使用useDeferredValue延迟状态更新](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3) |
 |  11 | useInsertionEffect | - | [👉 useInsertionEffect——CSS-in-JS样式注入新方式](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644) | 
 |  12 | useImperativeHandle | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
-|  13 | useSyncExternalStore | useImperativeHandle | [👉 使用useSyncExternalStore获取实时数据](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4) |
+|  13 | useSyncExternalStore | useSyncExternalStore | [👉 使用useSyncExternalStore获取实时数据](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4) |
