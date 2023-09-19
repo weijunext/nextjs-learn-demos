@@ -127,4 +127,9 @@ const features = [
     description: `👉 [Read the blog post](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5)
     👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useImperativeHandle)`,
   },
+  {
+    title: "useSyncExternalStore",
+    description: `👉 [Read the blog post](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4)
+    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useSyncExternalStore)`,
+  },
 ];

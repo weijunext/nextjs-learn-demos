@@ -30,4 +30,5 @@ NextJS项目demo汇总，每个demo开一个分支
 |  9 | useTransition | - | [👉 使用useTransition进行非阻塞渲染](https://weijunext.com/article/5458862c-76aa-436e-adc5-269dc82228df) |
 |  10 | useDeferredValue | useDeferredValue | [👉 使用useDeferredValue延迟状态更新](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3) |
 |  11 | useInsertionEffect | - | [👉 useInsertionEffect——CSS-in-JS样式注入新方式](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644) | 
-|  11 | useImperativeHandle | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
+|  12 | useImperativeHandle | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
+|  13 | useSyncExternalStore | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
