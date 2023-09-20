@@ -32,3 +32,4 @@ NextJS项目demo汇总，每个demo开一个分支
 |  11 | useInsertionEffect | - | [👉 useInsertionEffect——CSS-in-JS样式注入新方式](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644) | 
 |  12 | useImperativeHandle | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
 |  13 | useSyncExternalStore | useSyncExternalStore | [👉 使用useSyncExternalStore获取实时数据](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4) |
+|  15 | useDebugValue | useSyncExternalStore | [👉 把useDebugValue加入你的React调试工具库](https://weijunext.com/article/01f63502-f459-4615-820d-a992d7322a89) |
