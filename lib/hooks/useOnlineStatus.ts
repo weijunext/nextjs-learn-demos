@@ -1,7 +1,8 @@
-import { useSyncExternalStore } from 'react';
+import { useDebugValue, useSyncExternalStore } from 'react';
 
 export function useOnlineStatus(): boolean {
   const isOnline = useSyncExternalStore<boolean>(subscribe, getSnapshot, getServerSnapshot);
+  useDebugValue(isOnline ? "✅ Online(useDebugValue)" : "❌ Disconnected(useDebugValue)")
   return isOnline;
 }
 
