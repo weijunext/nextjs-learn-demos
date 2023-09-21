@@ -21,7 +21,7 @@ NextJS项目demo汇总，每个demo开一个分支
 |  序号   |  Hook |  代码分支     | 文章链接  |
 |  ----  | ----  |  ----   | ----  |
 |  1 | useState | - | [👉 useState 的几个基础用法和进阶技巧](https://weijunext.com/article/36abddc1-a8cb-4618-b6eb-e536c4879535) |
-|  2-3 | useReducer、useContext | useReducer-useContext | [👉 全面掌握useReducer](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098) <br> [👉 useContext从基础应用到性能优化](https://weijunext.com/article/99d401ae-7428-405d-8af5-5c23c582dec8) |
+|  2-3 | useReducer <br> useContext | useReducer-useContext | [👉 全面掌握useReducer](https://weijunext.com/article/486d38b7-bb0a-4493-a72c-01077000b098) <br> [👉 useContext从基础应用到性能优化](https://weijunext.com/article/99d401ae-7428-405d-8af5-5c23c582dec8) |
 |  4 | useRef | useRef | [👉 useRef的多维用途](https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab) |
 |  5 | useEffect | useEffect | [👉 useEffect使用细节知多少](https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651) |
 |  6 | useLayoutEffect | useLayoutEffect | [👉 useLayoutEffect解决了什么问题](https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497) |
@@ -31,6 +31,7 @@ NextJS项目demo汇总，每个demo开一个分支
 |  10 | useDeferredValue | useDeferredValue | [👉 使用useDeferredValue延迟状态更新](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3) |
 |  11 | useInsertionEffect | - | [👉 useInsertionEffect——CSS-in-JS样式注入新方式](https://weijunext.com/article/ab3037b7-c0b6-4335-a869-431553a6b644) | 
 |  12 | useImperativeHandle | useImperativeHandle | [👉 使用useImperativeHandle能获得什么能力](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5) |
-|  13 | useSyncExternalStore | useSyncExternalStore | [👉 使用useSyncExternalStore获取实时数据](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4) |
-|  14 | useId | - | [👉 总有一天你会需要useId为你生成唯一id](https://weijunext.com/article/ba0498cb-3bb5-4d76-a93f-ed7c51864fee) |
-|  15 | useDebugValue | useSyncExternalStore | [👉 把useDebugValue加入你的React调试工具库](https://weijunext.com/article/01f63502-f459-4615-820d-a992d7322a89) |
+|  13、15 | useSyncExternalStore <br> useDebugValue| useSyncExternalStore | [👉 使用useSyncExternalStore获取实时数据](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4) <br>  [👉 把useDebugValue加入你的React调试工具库](https://weijunext.com/article/01f63502-f459-4615-820d-a992d7322a89) |
+|  14 | useId | - | [👉 总有一天你会需要useId为你生成唯一id](https://weijunext.com/article/ba0498cb-3bb5-4d76-a93f-ed7c51864fee) | 
+|  16 | use | - | [👉 精读React hook（十六）：一个为代码优雅而生的hook——use](https://weijunext.com/article/4a9829b4-64ea-4254-bcf6-a9a2eb9cd131) |
+
