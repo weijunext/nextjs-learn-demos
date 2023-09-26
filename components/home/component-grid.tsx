@@ -47,10 +47,7 @@ export default function ComponentGrid() {
           />
         </button>
       </Popover>
-      <Tooltip
-        content="Next.js Learn Demos is an open-source repository that provides
-            branch-by-branch explanations of Next.js ecosystem technologies."
-      >
+      <Tooltip content="Next.js Learn Demos is an open-source repository that provides tutorials on the Next.js ecosystem technologies.">
         <div className="flex w-36 cursor-default items-center justify-center rounded-md border border-gray-300 px-3 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-none active:bg-gray-100">
           <p className="text-gray-600">Tooltip</p>
         </div>

@@ -31,7 +31,7 @@ const DemoModal = ({
           <h3 className="font-display text-2xl font-bold">Next.js Demos</h3>
           <p className="text-sm text-gray-500">
             Next.js Learn Demos is an open-source repository that provides
-            branch-by-branch explanations of Next.js ecosystem technologies.
+            tutorials on the Next.js ecosystem technologies.
           </p>
         </div>
       </div>

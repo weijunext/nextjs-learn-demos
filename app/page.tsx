@@ -66,7 +66,7 @@ export default async function Home() {
         >
           <Balancer>
             Next.js Learn Demos is an open-source repository that provides
-            branch-by-branch explanations of Next.js ecosystem technologies.
+            tutorials on the Next.js ecosystem technologies.
           </Balancer>
         </p>
         <div
