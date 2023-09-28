@@ -42,3 +42,15 @@ next-env.d.ts
 # db
 postgres
 ./prisma/migrations/*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.env
+
+# idea
+.idea
+.contentlayer
