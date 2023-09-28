@@ -78,7 +78,7 @@ export default async function PagePage({ params }: PageProps) {
   }
 
   return (
-    <article className="z-10 w-full max-w-xl px-5 xl:px-0">
+    <article className="z-10 w-full max-w-3xl px-5 xl:px-0">
       <div className="space-y-4">
         <h1 className="inline-block font-heading text-4xl lg:text-5xl">
           {page.title}

@@ -193,6 +193,26 @@ const features = [
       </div>
     ),
   },
+  {
+    title: "MDX Contentlayer",
+    description: `Turn your Markdown files into static web pages.
+    👉 [Visit the demo page](https://nextjs.weijunext.com/mdx-page-demo).
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/contentlayer).
+      👉 [Read the blog post](https://weijunext.com/article/49744a7c-f56b-43d7-8864-693ed3efa1a5).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="next" src="/next.svg" width={50} height={50} />
+        <Image
+          alt="contentlayer"
+          src="/contentlayer.svg"
+          width={50}
+          height={50}
+        />
+        <Image alt="markdown" src="/markdown.svg" width={50} height={50} />
+      </div>
+    ),
+  },
 ];
 
 const posts = [
