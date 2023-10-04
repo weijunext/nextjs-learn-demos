@@ -44,9 +44,7 @@ export default function UserDropdown({ user }: { user: UserInfo }) {
         >
           <Image
             alt={email}
-            src={
-              avatar || `https://avatars.dicebear.com/api/micah/${email}.svg`
-            }
+            src={avatar || `https://api.dicebear.com/avatar.svg`}
             width={40}
             height={40}
           />

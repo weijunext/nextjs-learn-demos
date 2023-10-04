@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "dev:mdx": "concurrently \"contentlayer dev\" \"next dev\"",
     "build:local": "contentlayer build && next build",
     "build": "contentlayer build && prisma generate && prisma db push && next build",
@@ -27,6 +27,7 @@
     "clsx": "^2.0.0",
     "concurrently": "^8.2.1",
     "contentlayer": "^0.3.4",
+    "dayjs": "^1.11.10",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.18",
     "focus-trap-react": "^10.2.1",

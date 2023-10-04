@@ -1,7 +1,9 @@
-import NextAuth,{ NextAuthOptions } from "next-auth" 
-import GithubProvider from 'next-auth/providers/github';
 import prisma from "@/lib/prisma";
+import redis from "@/lib/redis";
+import { getRedisRoleByUserId } from "@/lib/role";
 import { UserInfo } from "@/types/user";
+import NextAuth, { NextAuthOptions } from "next-auth";
+import GithubProvider from 'next-auth/providers/github';
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -25,33 +27,63 @@ export const authOptions: NextAuthOptions = {
     // }),
   ],
   callbacks: {
-    session: async ({ session, token }) => {
-      const res = await prisma.user.upsert({
-        where: {
-          sub: token.sub
-        },
-        update: {
-          // 使用token中的数据
-          username: token.name || '',
-          avatar: token.picture || '',
-          email: token.email || ''
-        },
-        create: {
-          // 使用token中的数据 
-          sub: token.sub || '',
-          username: token.name || '',
-          avatar: token.picture || '',
-          email: token.email || '',
-          platform: 'github',
-        }
-      })
-      if (res) {
-        session.user = {
+    async jwt({ token, account }) {
+      if (account) {
+        // token 传递给 session
+        token.accessToken = account.access_token
+
+        // token 存入 redis
+        const accessToken: string | undefined = account.access_token
+        const expire = 60 * 60 * 24 * 36
+        const sub: string = token.sub && token.sub.toString() || 'error sub'
+        if (accessToken && sub) await redis.set(accessToken, sub, { ex: expire })
+
+        const res = await prisma.user.upsert({
+          where: {
+            sub: token.sub
+          },
+          update: {
+            // 使用token中的数据
+            username: token.name || '',
+            avatar: token.picture || '',
+            email: token.email || ''
+          },
+          create: {
+            // 使用token中的数据 
+            sub: token.sub || '',
+            username: token.name || '',
+            avatar: token.picture || '',
+            email: token.email || '',
+            platform: 'github',
+          }
+        })
+        const redisRoleAndExpire: { redisRole: number, expire: number } = await getRedisRoleByUserId({ sub: res.sub as string })
+        const userInfo = {
           sub: res.sub,
           username: res.username,
           avatar: res.avatar,
           platform: res.platform,
           email: res.email,
+          role: redisRoleAndExpire.redisRole || 0,
+          membershipExpire: redisRoleAndExpire.expire || null,
+          accessToken: account.access_token
+        }
+        return userInfo
+      }
+      return token
+    },
+    session: async ({ session, token }) => {
+      if (token) {
+        const redisRoleAndExpire: { redisRole: number, expire: number } = await getRedisRoleByUserId({ sub: token.sub as string })
+        session.user = {
+          sub: token.sub,
+          username: token.username,
+          avatar: token.avatar,
+          platform: token.platform,
+          email: token.email,
+          role: redisRoleAndExpire.redisRole || 0,
+          membershipExpire: redisRoleAndExpire.expire || null,
+          accessToken: token.accessToken
         } as UserInfo
       }
       return session
