@@ -186,7 +186,7 @@ export function FakeMembership({ ...props }: Props) {
               className="w-12 h-12 rounded-full"
             />
             <div>
-              <h2 className="font-bold text-xl">test user</h2>
+              <h2 className="font-bold text-xl">{props.user.username}</h2>
               <p className="text-gray-600">
                 Plan:{" "}
                 {showInfo.membershipExpire
