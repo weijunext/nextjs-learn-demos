@@ -214,8 +214,8 @@ const features = [
     ),
   },
   {
-    title: "Membership feature",
-    description: `Designing and developing a membership feature.
+    title: "Membership Feature",
+    description: `Design and develop a membership feature.
     👉 [Visit the demo page](https://nextjs.weijunext.com/fake-membership).
     👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/membership).
       👉 [Read the blog post](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611).
