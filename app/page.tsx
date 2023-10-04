@@ -213,6 +213,19 @@ const features = [
       </div>
     ),
   },
+  {
+    title: "Membership feature",
+    description: `Designing and developing a membership feature.
+    👉 [Visit the demo page](https://nextjs.weijunext.com/fake-membership).
+    👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/membership).
+      👉 [Read the blog post](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="next" src="/membership.svg" width={50} height={50} />
+      </div>
+    ),
+  },
 ];
 
 const posts = [
