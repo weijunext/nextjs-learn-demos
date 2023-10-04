@@ -50,8 +50,8 @@ export function FakeMembership({ ...props }: Props) {
 
   const checkStatusAction = useCallback(async () => {
     const res: ShowInfoProps = await checkStatusFetch({
-      sub: props.user.sub,
-      accessToken: props.user.accessToken || "",
+      sub: props.user?.sub,
+      accessToken: props.user?.accessToken || "",
     });
     const membershipExpire = res.membershipExpire
       ? Math.floor(new Date().getTime() / 1000) + res.membershipExpire
@@ -65,7 +65,7 @@ export function FakeMembership({ ...props }: Props) {
       membershipExpire,
       boostPackExpire,
     });
-  }, [props.user.sub, props.user.accessToken, setShowInfo]);
+  }, [props.user, setShowInfo]);
 
   const buyMembership = async () => {
     const res = await fetch(
