@@ -13,11 +13,11 @@ export const metadata = {
   icons: siteConfig.icons,
   openGraph: {
     ...siteConfig.openGraph,
-    title: "Fake Membership",
+    title: "React Hooks - useSyncExternalStore",
   },
   twitter: {
     ...siteConfig.twitter,
-    title: "Fake Membership",
+    title: "React Hooks - useSyncExternalStore",
   },
 };
 

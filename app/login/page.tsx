@@ -17,11 +17,11 @@ export const metadata = {
   icons: siteConfig.icons,
   openGraph: {
     ...siteConfig.openGraph,
-    title: "Fake Membership",
+    title: "Login Page",
   },
   twitter: {
     ...siteConfig.twitter,
-    title: "Fake Membership",
+    title: "Login Page",
   },
 };
 
