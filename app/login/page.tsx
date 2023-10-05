@@ -1,15 +1,28 @@
-import { Metadata } from "next";
 import Link from "next/link";
 
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
 import { UserAuthForm } from "@/components/UserAuthForm";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Login",
   description: "Login to your account",
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  openGraph: {
+    ...siteConfig.openGraph,
+    title: "Fake Membership",
+  },
+  twitter: {
+    ...siteConfig.twitter,
+    title: "Fake Membership",
+  },
 };
 
 export default async function LoginPage() {
