@@ -2,21 +2,26 @@ import Comparison1 from "@/app/hooks/useMemo/demo1";
 import Comparison2 from "@/app/hooks/useMemo/demo2";
 import Comparison3 from "@/app/hooks/useMemo/demo3";
 import Comparison4 from "@/app/hooks/useMemo/demo4";
+import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { Balancer } from "react-wrap-balancer";
 
 export const metadata = {
   title: "React Hooks Demos",
-  description: "React Hooks Demos by Weijunext",
-  author: "weijunext",
-  twitter: {
-    card: "summary_large_image",
-    title: "React Hooks Demos",
-    description: "React Hooks Demos by Weijunext",
-    creator: "@weijunext",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  openGraph: {
+    ...siteConfig.openGraph,
+    title: "Fake Membership",
   },
-  metadataBase: new URL("https://nextjs.weijunext.com"),
-  themeColor: "#FFF",
+  twitter: {
+    ...siteConfig.twitter,
+    title: "Fake Membership",
+  },
 };
 
 export default function Demo() {

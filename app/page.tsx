@@ -3,6 +3,7 @@ import ComponentGrid from "@/components/home/component-grid";
 import { Github, Twitter } from "@/components/shared/icons";
 import TablerEyeFilled from "@/components/shared/icons/eye";
 import LogoSVG from "@/components/shared/icons/logo";
+import { siteConfig } from "@/config/site";
 import redis from "@/lib/redis";
 import { nFormatter } from "@/lib/utils";
 import Image from "next/image";
@@ -64,10 +65,7 @@ export default async function Home() {
           className="mt-6 animate-fade-up text-center text-gray-500  opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>
-            Next.js Learn Demos is an open-source repository that provides
-            tutorials on the Next.js ecosystem technologies.
-          </Balancer>
+          <Balancer>{siteConfig.description}</Balancer>
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center opacity-0 space-x-5"

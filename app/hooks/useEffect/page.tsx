@@ -1,19 +1,24 @@
 import Counter from "@/app/hooks/useEffect/demo1";
+import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { Balancer } from "react-wrap-balancer";
 
 export const metadata = {
   title: "React Hooks Demos",
-  description: "React Hooks Demos by Weijunext",
-  author: "weijunext",
-  twitter: {
-    card: "summary_large_image",
-    title: "React Hooks Demos",
-    description: "React Hooks Demos by Weijunext",
-    creator: "@weijunext",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  openGraph: {
+    ...siteConfig.openGraph,
+    title: "Fake Membership",
   },
-  metadataBase: new URL("https://nextjs.weijunext.com"),
-  themeColor: "#FFF",
+  twitter: {
+    ...siteConfig.twitter,
+    title: "Fake Membership",
+  },
 };
 
 export default function Demo() {

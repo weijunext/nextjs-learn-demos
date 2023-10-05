@@ -1,20 +1,25 @@
 import { FakeMembership } from "@/app/fake-membership/FakeMembership";
+import { siteConfig } from "@/config/site";
 import { getCurrentUser } from "@/lib/session";
 import { UserInfo } from "@/types/user";
 import { Balancer } from "react-wrap-balancer";
 
 export const metadata = {
   title: "Fake Membership",
-  description: "Next Demos by Weijunext",
-  author: "weijunext",
-  twitter: {
-    card: "summary_large_image",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  openGraph: {
+    ...siteConfig.openGraph,
     title: "Fake Membership",
-    description: "Next Demos by Weijunext",
-    creator: "@weijunext",
   },
-  metadataBase: new URL("https://nextjs.weijunext.com/fake-membership"),
-  themeColor: "#FFF",
+  twitter: {
+    ...siteConfig.twitter,
+    title: "Fake Membership",
+  },
 };
 
 export default async function FakeMembershipContainer() {

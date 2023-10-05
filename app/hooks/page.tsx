@@ -1,20 +1,25 @@
 import Card from "@/components/home/card";
 import { Twitter } from "@/components/shared/icons";
 import LogoSVG from "@/components/shared/icons/logo";
+import { siteConfig } from "@/config/site";
 import { Balancer } from "react-wrap-balancer";
 
 export const metadata = {
   title: "React Hooks Demos",
-  description: "React Hooks Demos by Weijunext",
-  author: "weijunext",
-  twitter: {
-    card: "summary_large_image",
-    title: "React Hooks Demos",
-    description: "React Hooks Demos by Weijunext",
-    creator: "@weijunext",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  openGraph: {
+    ...siteConfig.openGraph,
+    title: "Fake Membership",
   },
-  metadataBase: new URL("https://nextjs.weijunext.com"),
-  themeColor: "#FFF",
+  twitter: {
+    ...siteConfig.twitter,
+    title: "Fake Membership",
+  },
 };
 
 export default function ReactHooksList() {
