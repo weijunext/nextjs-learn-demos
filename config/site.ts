@@ -26,7 +26,7 @@ const baseSiteConfig = {
       url: "https://weijunext.com",
     }
   ],
-  creator: 'weijunext',
+  creator: '@weijunext',
   themeColor: '#fff',
   icons: {
     icon: "/favicon.ico",
