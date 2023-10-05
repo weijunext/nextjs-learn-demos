@@ -1,23 +1,24 @@
 import { ThemeProvider } from "@/components/ThemedButton";
 import Footer from "@/components/layout/footer";
 import Nav from "@/components/layout/nav";
+import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Next.js Demos",
-  description: "Next.js Demos by Weijunext",
-  author: "weijunext",
-  twitter: {
-    card: "summary_large_image",
-    title: "Next.js Demos",
-    description: "Next.js Demos by Weijunext",
-    creator: "@weijunext",
-  },
-  metadataBase: new URL("https://nextjs.weijunext.com"),
-  themeColor: "#FFF",
+  title: siteConfig.name,
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  themeColor: siteConfig.themeColor,
+  icons: siteConfig.icons,
+  metadataBase: siteConfig.metadataBase,
+  // manifest: `${siteConfig.url}/site.webmanifest`,
+  openGraph: siteConfig.openGraph,
+  twitter: siteConfig.twitter,
 };
 
 export default function RootLayout({
