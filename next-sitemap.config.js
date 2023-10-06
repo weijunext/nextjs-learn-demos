@@ -19,6 +19,7 @@ module.exports = {
     }
   },
   additionalPaths: async (config) => [
+    // 这个版本的next-sitemap无法把app router的静态目录加载进来，所以在这里手动添加了
     await config.transform(config, '/'),
     await config.transform(config, '/useSyncExternalStore'),
     await config.transform(config, '/useRef'),
