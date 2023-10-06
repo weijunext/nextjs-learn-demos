@@ -6,9 +6,9 @@ module.exports = {
   siteUrl: 'https://nextjs.weijunext.com',
   changefreq: 'daily',
   priority: 0.7,
-  exclude: ['/404'],
+  exclude: ['/server-sitemap.xml',  '/404'],
   generateRobotsTxt: true,
-  // sitemapSize: 5000, // 站点超过5000个，拆分到多个文件
+  sitemapSize: 5000, // 站点超过5000个，拆分到多个文件
   transform: async (config, path) => {
     return {
       loc: path, // => this will be exported as http(s)://<config.siteUrl>/<path>
@@ -34,7 +34,6 @@ module.exports = {
   robotsTxtOptions: {
     additionalSitemaps: [
       'https://nextjs.weijunext.com/sitemap.xml',
-      'https://nextjs.weijunext.com/sitemap-0.xml',
     ],
     policies: [
       {
