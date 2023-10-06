@@ -224,6 +224,19 @@ const features = [
       </div>
     ),
   },
+  {
+    title: "SEO",
+    description: `Key SEO Configuration for Next.js.
+    👉 [Visit the source code1](https://github.com/weijunext/nextjs-learn-demos/tree/metadata).
+    👉 [Visit the source code2](https://github.com/weijunext/nextjs-learn-demos/tree/sitemap).
+      👉 [Read the blog post](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="next" src="/next.svg" width={50} height={50} />
+      </div>
+    ),
+  },
 ];
 
 const posts = [
