@@ -1,3 +1,5 @@
+import BaiDuAnalytics from "@/app/BaiDuAnalytics";
+import GoogleAnalytics from "@/app/GoogleAnalytics";
 import { ThemeProvider } from "@/components/ThemedButton";
 import Footer from "@/components/layout/footer";
 import Nav from "@/components/layout/nav";
@@ -29,6 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <GoogleAnalytics />
+        <BaiDuAnalytics />
         <ThemeProvider>
           <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100 dark:from-indigo-800 dark:via-gray-900 dark:to-cyan-800" />
           <Nav />
