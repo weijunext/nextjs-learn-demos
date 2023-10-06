@@ -18,6 +18,7 @@ NextJS项目demo汇总，每个demo开一个分支
 | Upstash | 用 Upstash 作为你的 Redis 服务器 | [👉 阅读文章](https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b)  |
 | contentlayer  | 让contentlayer帮你把md文件变成静态页面 | [👉 阅读文章](https://weijunext.com/article/49744a7c-f56b-43d7-8864-693ed3efa1a) |
 | membership  | 带你设计一套会员功能并开发它 | [👉 阅读文章](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611) |
+| metadata <br>sitemap  | Next.js的关键SEO配置 | [👉 阅读文章](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d) |
 
 ### 精读 React Hooks
 |  序号   |  Hook |  代码分支     | 文章链接  |
