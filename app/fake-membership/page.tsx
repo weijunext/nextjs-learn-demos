@@ -51,7 +51,7 @@ export default async function FakeMembershipContainer() {
   //   : 0;
 
   return (
-    <div className=" z-10">
+    <div className="max-w-screen-md z-10">
       <Balancer>
         <FakeMembership user={user as UserInfo} />
       </Balancer>

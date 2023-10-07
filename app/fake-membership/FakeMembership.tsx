@@ -221,31 +221,31 @@ export function FakeMembership({ ...props }: Props) {
               onClick={useFunctionAction}
               className="w-full px-4 py-2 bg-purple-500 text-white rounded-md"
             >
-              模拟使用功能
+              Simulate the use of functions(模拟使用功能)
             </button>
             <button
               onClick={buyMembership}
               className="w-full px-4 py-2 bg-blue-500 text-white rounded-md"
             >
-              购买会员
+              Simulate buy membership(购买会员)
             </button>
             <button
               onClick={buyBoost}
               className="w-full px-4 py-2 bg-green-500 text-white rounded-md"
             >
-              购买加油包
+              Simulate buy boost(购买加油包)
             </button>
             <button
               onClick={() => clearMemberExpire("membership")}
               className="w-full px-4 py-2 bg-red-500 text-white rounded-md"
             >
-              模拟会员过期
+              Simulate membership expiration(模拟会员过期)
             </button>
             <button
               onClick={() => clearMemberExpire("boost")}
               className="w-full px-4 py-2 bg-yellow-500 text-white rounded-md"
             >
-              模拟加油包过期
+              Simulate boost expiration(模拟加油包过期)
             </button>
           </div>
         </div>
