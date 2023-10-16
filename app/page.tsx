@@ -119,6 +119,29 @@ export default async function Home() {
         className="mt-10 mb-2 animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
+        <Balancer>React Insights</Balancer>
+      </h3>
+      <div className="grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+        {reactInsights.map(({ title, description, demo }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={
+              title === "Beautiful, reusable components" ? (
+                <ComponentGrid />
+              ) : (
+                demo
+              )
+            }
+          />
+        ))}
+      </div>
+
+      <h3
+        className="mt-10 mb-2 animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
+        style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+      >
         <Balancer>Other Hot Posts</Balancer>
       </h3>
       <div className="grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
@@ -240,7 +263,18 @@ const features = [
   },
 ];
 
-const posts = [
+const reactInsights = [
+  {
+    title: "React Fiber",
+    description: `Dive deep into React Fiber.
+    👉 [Read the blog post](https://weijunext.com/article/dive-into-react-fiber)
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="logo" src="/react.svg" width={50} height={50} />
+      </div>
+    ),
+  },
   {
     title: "React Hooks",
     description: `Dive deep into React hooks.
@@ -253,6 +287,9 @@ const posts = [
       </div>
     ),
   },
+];
+
+const posts = [
   {
     title: "NextJS Page Router: rendering",
     description: `Explaining CSR, SSR, SSG, and ISR in Next.js.
