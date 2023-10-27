@@ -6,7 +6,6 @@ import { UserInfo } from "@/types/user";
 import Image from "next/image";
 import Link from "next/link";
 import { useSignInModal } from "./sign-in-modal";
-import UserDropdown from "./user-dropdown";
 
 export default function NavBar({ user }: { user: UserInfo | null }) {
   const { SignInModal, setShowSignInModal } = useSignInModal();
@@ -35,7 +34,8 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
           </Link>
           <div className="flex items-center gap-4">
             <ThemedButton></ThemedButton>
-            {user ? (
+            {/* 数据库资源不足，本项目暂停提供登录演示，你可以依据自己的数据库进行测试 */}
+            {/* {user ? (
               <UserDropdown user={user} />
             ) : (
               <button
@@ -44,7 +44,7 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
               >
                 Sign In
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>
