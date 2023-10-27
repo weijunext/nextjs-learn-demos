@@ -1,4 +1,3 @@
-import { FakeMembership } from "@/app/fake-membership/FakeMembership";
 import { siteConfig } from "@/config/site";
 import { getCurrentUser } from "@/lib/session";
 import { UserInfo } from "@/types/user";
@@ -53,7 +52,15 @@ export default async function FakeMembershipContainer() {
   return (
     <div className="max-w-screen-md z-10">
       <Balancer>
-        <FakeMembership user={user as UserInfo} />
+        <div>
+          数据库资源不足，本项目暂停提供登录和会员演示，你可以根据教程创建自己的数据库进行测试
+        </div>
+        <div>
+          Due to insufficient database resources, the login and member
+          demonstration for this project are temporarily suspended. You can
+          follow the tutorial to create your own database for testing purposes.
+        </div>
+        {/* <FakeMembership user={user as UserInfo} /> */}
       </Balancer>
     </div>
   );
