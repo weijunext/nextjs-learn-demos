@@ -1,11 +1,11 @@
 "use client";
 
-import * as React from "react";
 import { signIn } from "next-auth/react";
+import * as React from "react";
 
-import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { Icons } from "@/components/Icons";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -21,7 +21,9 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
 
   return (
     <div className={cn("grid gap-6", className)} {...props}>
-      <button
+      {/* 数据库资源不足，登录功能将跳转到我的另一个项目体验，你也可以依据自己的数据库在站内进行测试 */}
+      {/* Due to insufficient database resources, the login feature will redirect to another one of my projects for the experience. You can also conduct tests within the site based on your own database. */}
+      {/* <button
         type="button"
         className={cn(buttonVariants())}
         onClick={login}
@@ -33,7 +35,14 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           <Icons.gitHub className="mr-2 h-4 w-4" />
         )}{" "}
         Github
-      </button>
+      </button> */}
+      <Link
+        href="https://www.smartexcel.cc"
+        target="_blank"
+        className={cn(buttonVariants())}
+      >
+        <button type="button">Go SmartExcel and try it.</button>
+      </Link>
     </div>
   );
 }

@@ -32,9 +32,19 @@ const SignInModal = ({
             />
           </a>
           <h3 className="font-display text-2xl font-bold">Sign In</h3>
-          <p className="text-sm text-gray-500">
+          {/* 数据库资源不足，登录功能将跳转到我的另一个项目体验，你也可以依据自己的数据库在站内进行测试 */}
+          {/* Due to insufficient database resources, the login feature will redirect to another one of my projects for the experience. You can also conduct tests within the site based on your own database. */}
+          {/* <p className="text-sm text-gray-500">
             This is strictly for demo purposes - only your github username and
             avatar will be stored.
+          </p> */}
+          <p className="text-sm text-gray-500">
+            Due to insufficient database resources, the login feature will
+            redirect to SmartExcel.cc for the experience.
+          </p>
+          <p className="text-sm text-gray-500">
+            You can also conduct tests within the site based on your own
+            database.
           </p>
         </div>
 

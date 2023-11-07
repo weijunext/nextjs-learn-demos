@@ -34,7 +34,8 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
           </Link>
           <div className="flex items-center gap-4">
             <ThemedButton></ThemedButton>
-            {/* 数据库资源不足，本项目暂停提供登录演示，你可以依据自己的数据库进行测试 */}
+            {/* 数据库资源不足，登录功能将跳转到我的另一个项目体验，你也可以依据自己的数据库在站内进行测试 */}
+            {/* Due to insufficient database resources, the login feature will redirect to another one of my projects for the experience. You can also conduct tests within the site based on your own database. */}
             {/* {user ? (
               <UserDropdown user={user} />
             ) : (
@@ -45,6 +46,12 @@ export default function NavBar({ user }: { user: UserInfo | null }) {
                 Sign In
               </button>
             )} */}
+            <button
+              className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+              onClick={() => setShowSignInModal(true)}
+            >
+              Sign In
+            </button>
           </div>
         </div>
       </div>
