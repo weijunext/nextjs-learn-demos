@@ -248,6 +248,19 @@ const features = [
     ),
   },
   {
+    title: "Integrate Lemon Squeezy",
+    description: `Develop your globally available membership features using Lemon Squeezy.
+    👉 [Visit the demo page](https://www.smartexcel.cc).
+    👉 [Visit the source code](https://github.com/weijunext/smart-excel-open).
+      👉 [Read the blog post](https://weijunext.com/article/integrate-lemonsqueezy-api).
+      `,
+    demo: (
+      <div className="flex items-center justify-center space-x-20">
+        <Image alt="next" src="/membership.svg" width={50} height={50} />
+      </div>
+    ),
+  },
+  {
     title: "SEO",
     description: `Key SEO Configuration for Next.js.
     👉 [Visit the source code1](https://github.com/weijunext/nextjs-learn-demos/tree/metadata).
