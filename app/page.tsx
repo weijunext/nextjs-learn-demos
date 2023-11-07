@@ -256,7 +256,7 @@ const features = [
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
-        <Image alt="next" src="/membership.svg" width={50} height={50} />
+        <Image alt="next" src="/lemon.svg" width={50} height={50} />
       </div>
     ),
   },
