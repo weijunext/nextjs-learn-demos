@@ -5,6 +5,14 @@ NextJS项目demo汇总，每个demo开一个分支
 我的博客：[J实验室](https://weijunext.com)  
 本仓库示例站：[nextjs.weijunext.com](https://nextjs.weijunext.com)  
 
+<div align="center">
+	<br>
+	<a href="https://nextjs.weijunext.com">
+		<img src="./public/website.svg" width="800" height="400" alt="Click to visit the demo website">
+	</a>
+	<br>
+</div>
+
 ## 阅读代码请配合对应文章食用
 
 ### 本站技术栈  
@@ -20,6 +28,11 @@ NextJS项目demo汇总，每个demo开一个分支
 | membership  | 带你设计一套会员功能并开发它 | [👉 阅读文章](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611) |
 | -  | 基于Lemon Squeezy开发你的全球可用的会员功能 | [👉 阅读文章](https://weijunext.com/article/integrate-lemonsqueezy-api) |
 | metadata <br>sitemap  | Next.js的关键SEO配置 | [👉 阅读文章](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d) |
+
+### 增强用户体验功能 
+|  分支   |  简介   | 文章链接  |
+|  ----  |  ----   | ----  |
+| AnimatedSvg  |  在SVG里写HTML和CSS，实现一个动画组件   | [👉 阅读文章](https://weijunext.com/article/animated-svg-component) |
 
 ### 精读 React Hooks
 |  序号   |  Hook |  代码分支     | 文章链接  |

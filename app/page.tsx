@@ -1,3 +1,4 @@
+import AnimatedSvgComponent from "@/components/AnimatedSvgComponent";
 import Card from "@/components/home/card";
 import ComponentGrid from "@/components/home/component-grid";
 import { Github, Twitter } from "@/components/shared/icons";
@@ -32,6 +33,16 @@ export default async function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+        <div className="mx-auto flex items-center justify-center">
+          <AnimatedSvgComponent
+            height={150}
+            width={300}
+            titleSize="text-2xl"
+            titleText="Next.js Demo"
+            paragraphSize="text-xs"
+            paragraphLink="https://github.com/weijunext/nextjs-learn-demos/tree/AnimatedSvg"
+          />
+        </div>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center opacity-0 space-x-5"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
@@ -55,12 +66,12 @@ export default async function Home() {
             <p className="text-sm font-semibold text-[#1d9bf0]">My Blog</p>
           </a>
         </div>
-        <h1
+        {/* <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl  opacity-0 font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>Next.js Demos</Balancer>
-        </h1>
+        </h1> */}
         <p
           className="mt-6 animate-fade-up text-center text-gray-500  opacity-0 md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
