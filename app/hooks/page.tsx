@@ -93,22 +93,22 @@ const features = [
   {
     title: "useRef",
     description: `👉 [Read the blog post](https://weijunext.com/article/f3460492-19ff-4214-8111-f1effa11e3ab)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useRef)`,
+    👉 [Visit demo page](/hooks/useRef)`,
   },
   {
     title: "useEffect",
     description: `👉 [Read the blog post](https://weijunext.com/article/772e7900-ead5-4468-8a68-599e916bc651)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useEffect)`,
+    👉 [Visit demo page](/hooks/useEffect)`,
   },
   {
     title: "useLayoutEffect",
     description: `👉 [Read the blog post](https://weijunext.com/article/fe61d9a6-84a1-4315-8e1d-34303cb2a497)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useLayoutEffect)`,
+    👉 [Visit demo page](/hooks/useLayoutEffect)`,
   },
   {
     title: "useMemo",
     description: `👉 [Read the blog post](https://weijunext.com/article/75704b53-4f6d-45db-a73b-f0cd6ce90ce9)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useMemo)`,
+    👉 [Visit demo page](/hooks/useMemo)`,
   },
   {
     title: "useCallback",
@@ -121,7 +121,7 @@ const features = [
   {
     title: "useDeferredValue",
     description: `👉 [Read the blog post](https://weijunext.com/article/0ca90f65-4cc3-4a64-a6ab-de0b2fde87a3)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useDeferredValue)`,
+    👉 [Visit demo page](/hooks/useDeferredValue)`,
   },
   {
     title: "useInsertionEffect",
@@ -130,12 +130,12 @@ const features = [
   {
     title: "useImperativeHandle",
     description: `👉 [Read the blog post](https://weijunext.com/article/9e8ce44c-238d-4eb7-b194-69493ac7c3e5)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useImperativeHandle)`,
+    👉 [Visit demo page](/hooks/useImperativeHandle)`,
   },
   {
     title: "useSyncExternalStore",
     description: `👉 [Read the blog post](https://weijunext.com/article/7a4d45e4-ca6d-44ad-abfd-36ee9a5bb1a4)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useSyncExternalStore)`,
+    👉 [Visit demo page](/hooks/useSyncExternalStore)`,
   },
   {
     title: "useId",
@@ -144,7 +144,7 @@ const features = [
   {
     title: "useDebugValue",
     description: `👉 [Read the blog post](https://weijunext.com/article/01f63502-f459-4615-820d-a992d7322a89)
-    👉 [Visit demo page](https://nextjs.weijunext.com/hooks/useSyncExternalStore)`,
+    👉 [Visit demo page](/hooks/useSyncExternalStore)`,
   },
   {
     title: "use",

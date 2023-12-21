@@ -228,7 +228,7 @@ const features = [
   {
     title: "MDX Contentlayer",
     description: `Turn your Markdown files into static web pages.
-    👉 [Visit the demo page](https://nextjs.weijunext.com/mdx-page-demo).
+    👉 [Visit the demo page](/mdx-page-demo).
     👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/contentlayer).
       👉 [Read the blog post](https://weijunext.com/article/49744a7c-f56b-43d7-8864-693ed3efa1a5).
       `,
@@ -248,7 +248,7 @@ const features = [
   {
     title: "Membership Feature",
     description: `Design and develop a membership feature.
-    👉 [Visit the demo page](https://nextjs.weijunext.com/fake-membership).
+    👉 [Visit the demo page](/fake-membership).
     👉 [Visit the source code](https://github.com/weijunext/nextjs-learn-demos/tree/membership).
       👉 [Read the blog post](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611).
       `,
@@ -303,7 +303,7 @@ const reactInsights = [
     title: "React Hooks",
     description: `Dive deep into React hooks.
     👉 [Read the blog post](https://weijunext.com/tag/React%20hooks)
-    👉 [Visit the demos page](https://nextjs.weijunext.com/hooks)
+    👉 [Visit the demos page](/hooks)
       `,
     demo: (
       <div className="flex items-center justify-center space-x-20">
