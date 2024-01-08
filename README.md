@@ -53,3 +53,14 @@ NextJS项目demo汇总，每个demo开一个分支
 |  14 | useId | - | [👉 总有一天你会需要useId为你生成唯一id](https://weijunext.com/article/ba0498cb-3bb5-4d76-a93f-ed7c51864fee) | 
 |  16 | use | - | [👉 一个为代码优雅而生的hook——use](https://weijunext.com/article/4a9829b4-64ea-4254-bcf6-a9a2eb9cd131) |
 
+
+## 关于我
+前端工程师，全栈开发爱好者，AI降临派。  
+
+[My Blog](https://weijunext.com)  
+[Github](https://github.com/weijunext)  
+[Twitter / X](https://twitter.com/weijunext)  
+[Medium](https://medium.com/@weijunext)  
+[掘金](https://juejin.cn/user/26044008768029)  
+[知乎](https://www.zhihu.com/people/mo-mo-mo-89-12-11)  
+[微信交流群](https://weijunext.com/make-a-friend)  
