@@ -25,7 +25,7 @@ NextJS项目demo汇总，每个demo开一个分支
 | NextAuth-Prisma  | NextJS+Next-Auth+Postgres+Prisma来完成登录模块 | [👉 阅读文章](https://weijunext.com/article/061d8cd9-fcf3-4d9e-bd33-e257bc4f9989) |
 | Docker | 探讨 Docker 和 Docker Compose 的使用 | [👉 阅读文章](https://weijunext.com/article/b33a5545-fd26-47a6-8641-3c7467fb3910) |
 | Upstash | 用 Upstash 作为你的 Redis 服务器 | [👉 阅读文章](https://weijunext.com/article/6510121c-90da-4d20-85a1-72cbbdb3983b)  |
-| contentlayer  | 让contentlayer帮你把md文件变成静态页面 | [👉 阅读文章](https://weijunext.com/article/49744a7c-f56b-43d7-8864-693ed3efa1a) |
+| contentlayer  | 让contentlayer帮你把md文件变成静态页面 | [👉 阅读文章](https://weijunext.com/article/49744a7c-f56b-43d7-8864-693ed3efa1a5) |
 | membership  | 带你设计一套会员功能并开发它 | [👉 阅读文章](https://weijunext.com/article/ad3f4bff-0b78-4c04-bf12-98bffdc14611) |
 | -  | 基于Lemon Squeezy开发你的全球可用的会员功能 | [👉 阅读文章](https://weijunext.com/article/integrate-lemonsqueezy-api) |
 | metadata <br>sitemap  | Next.js的关键SEO配置 | [👉 阅读文章](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d) |
