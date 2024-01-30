@@ -17,11 +17,6 @@ const Footer = () => {
             size={6}
           />
           <SocialIcon
-            kind="twitter"
-            href="https://twitter.com/BigYeChengPu"
-            size={6}
-          />
-          <SocialIcon
             kind="twitterX"
             href="https://twitter.com/weijunext"
             size={6}
