@@ -40,6 +40,7 @@ const baseSiteConfig = {
   },
   footerProduct: [
     { url: 'https://weijunext.com/', name: 'J实验室' },
+    { url: "https://PHCopilot.AI/", name: "PH Copilot" },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
     { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
     { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
