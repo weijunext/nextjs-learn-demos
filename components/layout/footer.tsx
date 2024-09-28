@@ -16,7 +16,12 @@ const Footer = () => {
           {siteConfig.footerProduct.map((product, index) => {
             return (
               <>
-                <Link key={product.url} href={product.url} target="_blank">
+                <Link
+                  key={product.url}
+                  href={product.url}
+                  target="_blank"
+                  rel={product.rel || ""}
+                >
                   {product.name}
                 </Link>
                 {index !== siteConfig.footerProduct.length - 1 ? (

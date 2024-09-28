@@ -5,6 +5,7 @@ export type AuthorsConfig = {
 export type ProductLink = {
   url: string
   name: string
+  rel?: string
 }
 export type SiteConfig = {
   name: string
